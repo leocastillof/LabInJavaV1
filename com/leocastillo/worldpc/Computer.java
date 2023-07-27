@@ -19,6 +19,14 @@ public class Computer {
         this.mouse = mouse;
     }
 
+    public int getIdComputer() {
+        return idComputer;
+    }
+
+    public void setIdComputer(int idComputer) {
+        this.idComputer = idComputer;
+    }
+
     public String getName() {
         return name;
     }
