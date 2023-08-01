@@ -1,11 +1,13 @@
 package com.leocastillo.worldpc;
 
-public class Mouse {
-    private int idMouse;
-    private int counterMouses;
+public class Mouse extends InputDevices{
+    private final int idMouse;
+    private static int counterMouses;
 
     public Mouse(String typeDevices, String brand)
     {
+        super(typeDevices, brand);
+        this.idMouse = ++Mouse.counterMouses;
 
     }
     @Override

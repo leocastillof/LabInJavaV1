@@ -1,12 +1,13 @@
 package com.leocastillo.worldpc;
 
-public class Keyboard {
-    private int idKeyboard;
-    private int counterKeyboard;
+public class Keyboard extends InputDevices{
+    private final int idKeyboard;
+    private static int counterKeyboard;
 
     public Keyboard(String typeDevices, String brand)
     {
-
+        super(typeDevices, brand);
+        this.idKeyboard = ++Keyboard.counterKeyboard;
     }
 
     @Override
