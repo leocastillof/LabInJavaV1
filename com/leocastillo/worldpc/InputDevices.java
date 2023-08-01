@@ -4,13 +4,9 @@ public class InputDevices {
     private String inputType;
     private String brand;
 
-    public InputDevices()
-    {
-    }
 
     public InputDevices(String inputType, String brand)
     {
-        this();
         this.inputType = inputType;
         this.brand = brand;
     }
