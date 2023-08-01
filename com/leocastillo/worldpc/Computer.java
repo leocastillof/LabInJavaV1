@@ -6,9 +6,11 @@ public class Computer {
     private Monitor monitor;
     private Keyboard keyboard;
     private Mouse mouse;
+    private static int counterComputer;
 
     public Computer()
     {
+        this.idComputer = ++Computer.counterComputer;
     }
 
     public Computer(String name, Monitor monitor, Keyboard keyboard, Mouse mouse) {
